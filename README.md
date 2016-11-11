@@ -21,7 +21,7 @@ Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.0
 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A
 ```
 4. Extend and define your own scrapper:
-```
+```python
 from easy_scrapper.core import EasyScrapper
 
 class MyEasyScrapper(EasyScrapper):
