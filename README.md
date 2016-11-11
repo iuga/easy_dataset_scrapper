@@ -6,14 +6,14 @@ Easy Dataset Scrapper base objet to make dataset scrapper in a faster and secure
 ```
 pip install git+https://github.com/iuga/easy_dataset_scrapper
 ```
-2. Create a proxy list ( only if needed ) with `vim proxies.txt`:
+2. Create a proxy list ( only if needed ) with `vim proxies.txt`. You can get some free proxies from [SSLProxies](https://www.sslproxies.org/):
 ```
 97.77.104.22:80
 188.213.143.119:8118
 47.88.137.179:8080
 12.41.141.10:8080
 ```
-3. Create the user agents list to use ( only if needed ) with `vim user_agents.txt`:
+3. Create the user agents list to use ( only if needed ) with `vim user_agents.txt`. You can get some examples from [DeviceAtlas](https://deviceatlas.com/blog/list-of-user-agent-strings):
 ```
 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36
 Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.1
@@ -44,6 +44,6 @@ if __name__ == '__main__':
     scrapper.start(1, 20)
 ```
 5. Launch the scrapper:
-```
+```bash
 python my_scrapper.py
 ```
