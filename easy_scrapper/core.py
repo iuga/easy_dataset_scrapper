@@ -106,7 +106,7 @@ class EasyScrapper(object):
         :param retries is the number of retries to try to download the resource if fails.
         :returns the url data
         """
-        iteration = 0
+        iteration = 1
         while iteration <= retries:
             try:
                 the_proxy = choice(self.proxies)
