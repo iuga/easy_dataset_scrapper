@@ -111,9 +111,9 @@ class EasyScrapper(object):
             try:
                 the_proxy = choice(self.proxies)
                 if use_proxy:
-                    logger.info("Downloading {} through {}".format(url, the_proxy))
+                    logger.info("Downloading {} through {} and retry {}/{} times.".format(url, the_proxy, iteration, retries))
                 else:
-                    logger.info("Downloading {}".format(url))
+                    logger.info("Downloading {} and retry {}/{} times.".format(url, iteration, retries))
 
                 if use_proxy:
                     # Enable Proxies
