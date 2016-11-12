@@ -67,7 +67,7 @@ class EasyScrapper(object):
         if exists(filename):
             with open(filename, 'r+') as fp:
                 data = fp.read()
-                all_data = data.split("\n")
+                all_data = filter(None, data.split("\n"))
         else:
             return defaults
         return all_data
