@@ -107,7 +107,9 @@ class EasyScrapper(object):
         :returns the url data
         """
         iteration = 1
+        print(iteration, retries)
         while iteration <= retries:
+            print("Inside the while")
             try:
                 the_proxy = choice(self.proxies)
                 if use_proxy:
